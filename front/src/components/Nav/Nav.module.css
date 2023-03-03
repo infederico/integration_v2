@@ -1,0 +1,101 @@
+.nav {
+    background-color: rgb(48, 46, 46);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+  
+.logo {
+    position: absolute;
+    align-items: center;
+    height: 48px;
+    cursor: pointer;
+}
+  
+.logo:hover {
+    cursor: pointer;
+}
+
+  .menu {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 245, 245)  ;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu.open {
+    transform: translateX(0);
+  }
+  
+  .hamburgerButton {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hamburgerIcon {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background-color: rgb(245, 245, 245);
+    display: block;
+  }
+  
+  .hamburgerIcon::before,
+  .hamburgerIcon::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color:   rgb(245, 245, 245);
+    display: block;
+  }
+  
+  .hamburgerIcon::before {
+    top: -6px;
+  }
+  
+  .hamburgerIcon::after {
+    bottom: -6px;
+  }
+  
+.navLinks {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(48, 46, 46);
+  padding: 16px 0;
+}
+
+.navLinks a {
+  margin: 0 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navLinks a + .alt {
+  margin: 0 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+  
+.navLinks a.active,
+.navLinks a:focus {
+  color: #02B1C8;
+}
+

@@ -1,0 +1,39 @@
+.hamburgerButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hamburgerIcon {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    display: block;
+  }
+  
+  .hamburgerIcon::before,
+  .hamburgerIcon::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    display: block;
+  }
+  
+  .hamburgerIcon::before {
+    top: -6px;
+  }
+  
+  .hamburgerIcon::after {
+    bottom: -6px;
+  }
+  
+ 

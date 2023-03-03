@@ -1,0 +1,46 @@
+.input {
+    width: 22%;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input::placeholder {
+    text-align: center;
+}
+
+.input:hover {
+    border: solid 1px #02B1C8;
+}
+
+.input:focus {
+    border: 1px solid #02B1C8;
+    outline: none;
+}
+
+input[type="radio"] {
+    margin: 0.5em;
+}
+
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #02B1C8;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #02b1c880;
+}
+
+label {
+    color: #fff;
+    padding: 0.5em;
+}

@@ -1,0 +1,100 @@
+ /* .card {
+    width: 25%;
+    height: auto;
+    border: solid 3px grey;
+    background-color: rgb(206, 206, 206);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 1em;
+    transition: all 0.2s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(24, 23, 23);
+    justify-content: center;
+}
+
+.card:hover {
+    transform: scale(1.008);
+    transition: all 0.2s ease;
+    border: solid 3px rgb(233, 233, 233);
+
+} */
+
+.buttonClose {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: solid 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonClose:hover {
+    background-color: red;
+    color: white;
+    border-color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* .cardH2 {
+    color: rgb(50, 11, 59);
+    display: flex;
+    justify-content: center;
+}
+
+.cardImg {
+    width: 100%;
+    height: auto;
+    border-radius: 999999em;
+}
+
+.cardImg:hover {
+    opacity: 75%;
+    cursor: pointer;
+}
+
+.cardH3 {
+    display: flex;
+    justify-content: center;
+}  */
+
+
+
+
+
+
+
+figure {
+    display: grid;
+    border-radius: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  figure > * {
+    grid-area: 1/1;
+    transition: .5s;
+  }
+  figure figcaption {
+    display: grid;
+    align-items: end;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0000;
+    padding: .75rem;
+    background: var(--c,#0009);
+    clip-path: inset(0 var(--_i,100%) 0 0);
+    -webkit-mask:
+      linear-gradient(#000 0 0),
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+    text-decoration: none;
+  }
+  figure:hover figcaption{
+    --_i: 0%;
+  }
+  figure:hover img {
+    transform: scale(1.05);
+  }

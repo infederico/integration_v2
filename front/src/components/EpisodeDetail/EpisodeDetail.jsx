@@ -29,8 +29,8 @@ const EpisodeDetail = () => {
             <div className={styles.detailHeader}>
                 <h1 className={styles.headerText}>{character?.id}</h1>
                 <h1 className={styles.headerText}>{character?.episode}</h1>
-                <h1 className={styles.headerText}>{character?.name}</h1>
-                <h1 className={styles.headerText}>{character?.air_date}</h1>     
+                <h1 className={styles.headerSubText}>{character?.name}</h1>
+                <h1 className={styles.headerSubText}>{character?.air_date}</h1>     
         </div> </div>
     );
 };

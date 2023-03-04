@@ -27,10 +27,10 @@ const LocationDetail = () => {
     return (
         <div className={styles.detailContainer}>
             <div className={styles.detailHeader}>
-                <h1 className={styles.headerText}>{character?.name}</h1>
                 <h1 className={styles.headerText}>{character?.id}</h1>
-                <h1 className={styles.headerText}>{character?.type}</h1>
-                <h1 className={styles.headerText}>{character?.dimension}</h1>
+                <h1 className={styles.headerText}>{character?.name}</h1>
+                <h1 className={styles.headerSubText}>{character?.type}</h1>
+                <h1 className={styles.headerSubText }>{character?.dimension}</h1>
         </div> </div>
     );
 };

@@ -1,10 +1,11 @@
 import styles from './SearchBar.module.css';
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { search } from '../../redux/actions';
 
 const SearchBar = () => {
 
+  const theme = useSelector(state => state.theme);
   const [query, setQuery] = useState('');
   const [option, setOption] = useState('characters');
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ const SearchBar = () => {
       />
       <div>
         <br />
-        <label>
+        <label className={ theme ? styles.darkTheme : styles.lightTheme }>
           <input
             className={styles.radio}
             type="radio"
@@ -37,7 +38,7 @@ const SearchBar = () => {
           />
           Characters    
         </label>
-        <label>
+        <label className={ theme ? styles.darkTheme : styles.lightTheme }>
           <input
             type="radio"
             name="option"
@@ -47,7 +48,7 @@ const SearchBar = () => {
           />
           Episodes    
         </label>
-        <label>
+        <label className={ theme ? styles.darkTheme : styles.lightTheme }>
           <input
             type="radio"
             name="option"

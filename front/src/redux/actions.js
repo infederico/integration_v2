@@ -1,4 +1,4 @@
-import { GET_ALL_CHARACTERS, GET_ALL_EPISODES, GET_ALL_LOCATIONS, SEARCH_SUCCESS, SEARCH_FAIL, SEARCH_CLEAN, TOGGLE_THEME } from "./action-types";
+import { GET_ALL_CHARACTERS, GET_ALL_EPISODES, GET_ALL_LOCATIONS, SEARCH_SUCCESS, SEARCH_FAIL, SEARCH_CLEAN, TOGGLE_THEME, SET_ACCESS } from "./action-types";
 import axios from 'axios';
 import { urlCharacters, urlEpisodes, urlLocations } from "../assets/ApiUrls/urls";
 
@@ -71,4 +71,8 @@ export const search = (query, option) => async (dispatch) => {
 
 export const toggleTheme = () => {
   return { type: TOGGLE_THEME }
+};
+
+export const setAccess = (access) => {
+  return { type: SET_ACCESS, payload: access }
 };

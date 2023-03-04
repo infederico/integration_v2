@@ -1,3 +1,11 @@
+.lightTheme {
+    color: rgb(245, 245, 245);
+}
+
+.darkTheme {
+    color: rgb(48, 46, 46);
+}
+
 .input {
     width: 22%;
     text-align: left;

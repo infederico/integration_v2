@@ -1,8 +1,13 @@
-import { GET_ALL_CHARACTERS, GET_ALL_EPISODES, GET_ALL_LOCATIONS, SEARCH_CLEAN, SEARCH_FAIL, SEARCH_SUCCESS, TOGGLE_THEME } from "./action-types";    
+import { GET_ALL_CHARACTERS, GET_ALL_EPISODES, GET_ALL_LOCATIONS, SEARCH_CLEAN, SEARCH_FAIL, SEARCH_SUCCESS, TOGGLE_THEME, SET_ACCESS } from "./action-types";    
 
 const initialState = {
 
+    userData: {
+        username: 'infederico@gmail.com',
+        password: 'henry12345'
+    },
     access: false,
+    
     theme: true,
 
     characters: [],
@@ -21,6 +26,11 @@ const initialState = {
 
 const rootReducer = (state = initialState, action) => {
     switch(action.type) {
+        case SET_ACCESS:
+            return {
+                ...state,
+                access: action.payload
+            }
         case TOGGLE_THEME:
             return {
                 ...state,

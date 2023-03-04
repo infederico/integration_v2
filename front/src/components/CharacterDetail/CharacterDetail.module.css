@@ -35,17 +35,6 @@
     width: 60%;
 }
 
-.headerInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0 10px #333;
-}
-
 .imageContainer {
     display: flex;
     align-items: center;

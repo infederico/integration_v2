@@ -1,3 +1,5 @@
+export const SET_ACCESS = 'SET_ACCESS';
+
 export const TOGGLE_THEME = 'TOGGLE_THEME';
 
 export const SEARCH_SUCCESS = 'SEARCH_SUCCESS';

@@ -9,12 +9,18 @@ import About from './components/About/About';
 import CharacterDetail from './components/CharacterDetail/CharacterDetail';
 import EpisodeDetail from './components/EpisodeDetail/EpisodeDetail';
 import LocationDetail from './components/LocationDetail/LocationDetail';
+import { useSelector } from 'react-redux';
+import LogIn from './components/LogIn/LogIn';
 
 const App = () => {
+
+  const access = useSelector(state => state.access)
+
   return (
     <div className="App">
-      <Nav />
+      {access && <Nav />}
       <Routes>
+        <Route path='/' element={ access ? null : <LogIn /> } />
         <Route path='/home' element={<Home />} />
         <Route path='/characters' element={<Characters />} />
         <Route path='/episodes' element={<Episodes />} />

@@ -5,6 +5,7 @@ import logo from '../../assets/images/logo.png';
 import menuDark from '../../assets/images/menu-dark-theme.png';
 import menuActive from '../../assets/images/menu-active.png';
 import ToggleTheme from '../ThemeToggle/ThemeToggle';
+import LogOut from '../LogOut/LogOut';
 
 const Nav = () => {
   const [ menuOpen, setMenuOpen ] = useState(false);
@@ -39,6 +40,10 @@ const Nav = () => {
       />
 
       <ToggleTheme />
+      
+      {menuOpen &&
+      <LogOut />
+      }
 
     </div>
   );

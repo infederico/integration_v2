@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Nav from './components/Nav/Nav';
 import Characters from './components/Characters/Characters';
@@ -11,10 +11,17 @@ import EpisodeDetail from './components/EpisodeDetail/EpisodeDetail';
 import LocationDetail from './components/LocationDetail/LocationDetail';
 import { useSelector } from 'react-redux';
 import LogIn from './components/LogIn/LogIn';
+import { useEffect } from 'react';
 
 const App = () => {
 
   const access = useSelector(state => state.access)
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    !access && navigate('/');
+  }, [access, navigate]
+  );
 
   return (
     <div className="App">
